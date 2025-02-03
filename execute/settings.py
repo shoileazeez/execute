@@ -30,7 +30,7 @@ DEBUG = config('DJANGO_DEBUG', default=False, cast=bool)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['execute-ue9k.onrender.com']
 
 
 # Application definition
