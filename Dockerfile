@@ -30,7 +30,8 @@ RUN apt-get update && apt-get install -y \
 
 # Install Node.js
 
-
+# Increase file descriptor limit
+RUN ulimit -n 4096
 # Install Yarn (optional, if needed for Node.js projects)
 RUN npm install --global yarn
 
