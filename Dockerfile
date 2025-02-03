@@ -50,4 +50,4 @@ USER celeryuser
 EXPOSE 8000
 
 # Command to run Celery worker and Gunicorn
-CMD ["sh", "-c", "python manage.py migrate && python manage.py collectstatic --noinput  & gunicorn sandbox_project.wsgi:application --bind 0.0.0.0:$PORT"]
+CMD ["sh", "-c", "python manage.py migrate && python manage.py collectstatic --noinput  & gunicorn execute.wsgi:application --bind 0.0.0.0:$PORT"]
