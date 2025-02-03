@@ -2,3 +2,6 @@ django==5.0.1
 djangorestframework==3.14.0
 gunicorn==21.2.0
 psutil==5.9.8
+pandas
+numpy
+whitenoise==6.8.2
